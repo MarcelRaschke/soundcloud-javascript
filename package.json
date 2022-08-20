@@ -12,27 +12,29 @@
     "build": "webpack -p",
     "buildPlayback": "cd ./vendor/playback && webpack --config webpack.config.js",
     "start": "IS_NPM=1 webpack-dev-server",
-    "serve": "node ./serve.js"
+    "serve": "node ./serve.js",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "SoundCloud Ltd.",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^5.6.15",
-    "babel-loader": "^5.3.0",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.0.0",
     "chai": "^3.2.0",
-    "eslint": "^1.0.0-rc-1",
-    "karma": "^0.13.3",
+    "eslint": "^7.3.0",
+    "karma": "^6.3.16",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^0.2.0",
     "karma-firefox-launcher": "^0.1.6",
     "karma-mocha": "^0.2.0",
     "karma-safari-launcher": "^0.1.1",
     "karma-sinon": "^1.0.4",
-    "mocha": "^2.2.5",
+    "mocha": "^6.2.3",
     "node-libs-browser": "^0.5.2",
     "sinon": "^1.15.4",
-    "webpack": "^1.10.1",
-    "webpack-dev-server": "^1.10.1",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^3.1.11",
     "worker-loader": "^0.6.0"
   },
   "dependencies": {
@@ -40,6 +42,8 @@
     "es6-promise": "^2.3.0",
     "form-urlencoded": "^0.1.4",
     "node-static": "^0.7.7",
-    "query-string": "^2.3.0"
-  }
+    "query-string": "^2.3.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
