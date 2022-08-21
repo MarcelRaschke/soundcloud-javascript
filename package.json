@@ -30,7 +30,7 @@
     "karma-sinon": "^1.0.4",
     "mocha": "^2.2.5",
     "node-libs-browser": "^0.5.2",
-    "sinon": "^1.15.4",
+    "sinon": "^14.0.0",
     "webpack": "^1.10.1",
     "webpack-dev-server": "^1.10.1",
     "worker-loader": "^0.6.0"
